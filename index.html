@@ -4,69 +4,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distribuidora Del Rio</title>
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
     <header>
         <nav>
-            <img src="./images/logo.jpg" alt="">
-            <ul>
-                <li><a href="">INICIO</a></li>
-                <li><a href="">NOSOTROS</a></li>
-                <li><a href="">PORTFOLIO</a></li>
-                <li><a href="">CONTACTO</a></li>
-            </ul>
-            <ul>
-                <li><a href="">TIENDA</a></li>
-            </ul>
+            <a href="" class="logo__header"><img src="./images/logo.jpg" alt=""></a>
+            <div class="ul__header">
+                <ul>
+                    <li><a href="">INICIO</a></li>
+                    <li><a href="">NOSOTROS</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                </ul>
+                <ul class="header__tienda">
+                    <li><a href="">TIENDA</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="portada">
             <img src="./images/portada.jpg" alt="">
             <div>
                 <h1>Distribuidora Farmacéutica<br>Del Rio</h1>
                 <p>Ofrecemos confianza</p>
             </div>
         </section>
-        <section>
+        <section class="nuestros__servicios">
             <h2>Nuestros servicios</h2>
-            <div>
+            <div class="tarjetas">
                 <div>
                     <img src="./images/servicioEcommerce.jpg" alt="">
                     <p>E-Commerce</p>
                 </div>
-                <div><img src="./images/servicioVentas.jpg" alt=""></div>
-                <p>Ventas</p>
-            </div>
-            <div>
-                <img src="./images/servicioLogistica.jpg" alt="">
-                <p>Logística</p>
+                <div>
+                    <img src="./images/servicioVentas.jpg" alt="">
+                    <p>Ventas</p>
+                </div>
+                <div>
+                    <img src="./images/servicioLogistica.jpg" alt="">
+                    <p>Logística</p>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="nosotros">
             <h2>Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore numquam eos, facilis sequi deleniti. Aliquid nisi, assumenda veritatis, sapiente quos impedit dolorem dolores labore quae fugiat perspiciatis consequatur odit.</p>
+            <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita et nesciunt numquam rem reiciendis placeat animi unde libero possimus. Eum, dicta! Explicabo, iste aspernatur sapiente necessitatibus eaque maxime perspiciatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, soluta? Facilis nisi est cum beatae tempore sit neque distinctio quasi? Veritatis mollitia neque ea voluptate cupiditate non harum perferendis laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi labore repellat neque nemo at corporis harum maxime recusandae repellendus dolore quas, id itaque cum ex assumenda nostrum nesciunt est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati ea mollitia cum id assumenda iusto laudantium beatae, pariatur culpa quibusdam optio molestias, autem repellendus aliquam quasi! Ipsam, fugiat accusamus?  dolor sit amet consectetur adipisicing elit. Nesciunt labore numquam eos, facilis sequi deleniti. Aliquid nisi, assumenda veritatis, sapiente quos impedit dolorem dolores labore quae fugiat perspiciatis consequatur odit.</p>
         </section>
-        <section>
+        <section class="portfolio">
             <h2>Portfolio</h2>
         </section>
-        <section>
+        <section class="cobertura">
             <h2>Cobertura</h2>
             <div>
                 <img src="./images/mapaSantaFe.jpg" alt="">
                 <img src="./images/mapaEntreRios.jpg" alt="">
             </div>
         </section>
-        <section>
+        <section class="contacto">
             <h2>Contacto</h2>
-            <div>
-                <p>Nombre y Apellido y/o Empresa</p>
-                <input type="text">
-                <p>E-Mail</p>
-                <input type="text">
-                <p>Mensaje</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar">
+            <div class="contact">
+                <img src="./images/contacto.jpg" alt="">
+                <div class="seccion__contacto">
+                    <div class="nombres">
+                        <p>Nombre y Apellido y/o Empresa</p>
+                        <input type="text">
+                    </div>
+                    <div class="email">
+                        <p>E-Mail</p>
+                        <input type="text">
+                    </div>
+                    <div class="mensaje">
+                        <p>Mensaje</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
             </div>
         </section>
     </main>

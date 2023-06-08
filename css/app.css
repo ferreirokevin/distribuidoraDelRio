@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "workSansRegular";
+  src: url(../../font/WorkSans-Regular.ttf);
+}
+* {
+  font-family: "workSansRegular", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #1d725f;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1d725f;
+  text-align: center;
+}
+
+.portada img {
+  position: relative;
+  top: 101px;
+  width: 100vw;
+}
+.portada div {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+  left: 10%;
+}
+.portada div p {
+  color: #1d725f;
+  font-size: 150%;
+}
+
+.nuestros__servicios {
+  position: relative;
+  top: 200px;
+}
+.nuestros__servicios .tarjetas {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nuestros__servicios .tarjetas div {
+  margin: 7%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  width: 20%;
+  background-color: #1d725f;
+  text-align: center;
+}
+.nuestros__servicios .tarjetas div p {
+  font-size: 2vw;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.nosotros {
+  position: relative;
+  top: 190px;
+}
+.nosotros p {
+  text-align: justify;
+  padding: 7%;
+  padding-top: 3%;
+  font-size: 130%;
+}
+
+.portfolio {
+  position: relative;
+  top: 250px;
+}
+
+.cobertura {
+  position: relative;
+  top: 500px;
+}
+.cobertura div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7%;
+}
+
+.contacto {
+  position: relative;
+  top: 600px;
+}
+.contacto .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .contact img {
+  margin-top: 5%;
+  width: 100vw;
+}
+.contacto .contact .seccion__contacto {
+  margin-top: -30%;
+  width: 40%;
+}
+.contacto .contact .seccion__contacto .nombres p {
+  font-size: 150%;
+  color: #ffffff;
+}
+.contacto .contact .seccion__contacto .nombres input {
+  width: 100%;
+  padding: 1%;
+}
+.contacto .contact .seccion__contacto .email p {
+  font-size: 150%;
+  color: #ffffff;
+}
+.contacto .contact .seccion__contacto .email input {
+  width: 100%;
+  padding: 1%;
+}
+.contacto .contact .seccion__contacto .mensaje p {
+  font-size: 150%;
+  color: #ffffff;
+}
+.contacto .contact .seccion__contacto .mensaje textarea {
+  width: 100%;
+  padding: 1%;
+}
+.contacto .contact .seccion__contacto .mensaje input {
+  background-color: #1d725f;
+  color: #ffffff;
+  border-style: none;
+  font-size: 120%;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+header nav .logo__header {
+  margin-left: 100px;
+}
+header nav img {
+  width: 45px;
+  margin: 25px;
+}
+header nav .ul__header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100px;
+}
+header nav .ul__header ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .ul__header ul li {
+  margin: 40px;
+  list-style: none;
+}
+header nav .ul__header ul li a {
+  color: #1d725f;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+}
+header nav .ul__header ul li:hover {
+  text-decoration: underline !important;
+}
+header nav .ul__header .header__tienda li {
+  background-color: #1d725f;
+  width: 90px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 55px;
+}
+header nav .ul__header .header__tienda li:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+header nav .ul__header .header__tienda li:hover a {
+  color: #1d725f;
+}
+header nav .ul__header .header__tienda li a {
+  color: #000;
+}
+
+footer {
+  position: absolute;
+  background-color: #1d725f;
+  width: 100vw;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=app.css.map */

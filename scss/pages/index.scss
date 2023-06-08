@@ -1,0 +1,126 @@
+.portada{
+    img{
+        position: relative;
+        top: 101px;
+        width: 100vw;
+    }
+    div{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 45%;
+        left: 10%;
+        p{
+            color: $color-primario;
+            font-size: 150%;
+        }
+    }
+}
+.nuestros__servicios{
+    position: relative;
+    top: 200px;
+    .tarjetas{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        div{
+            margin: 7%;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            width: 20%;
+            background-color: $color-primario;
+            text-align: center;
+            p{
+                font-size: 2vw;
+                margin-top: 10px;
+                color: $color-secundario;
+            }
+        }
+    }
+}
+.nosotros{
+    position: relative;
+    top: 190px;
+    p{
+        text-align: justify;
+        padding: 7%;
+        padding-top: 3%;
+        font-size: 130%;
+    }
+}
+.portfolio{
+    position: relative;
+    top: 250px;
+}
+.cobertura{
+    position: relative;
+    top: 500px;
+    div{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 7%;
+    }
+}
+.contacto{
+    position: relative;
+    top: 600px;
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-top: 5%;
+            width: 100vw;
+        }
+        .seccion__contacto{
+            margin-top: -30%;
+            width: 40%;
+            .nombres{
+                p{
+                    font-size: 150%;
+                    color: $color-secundario;
+                }
+                input{
+                    width: 100%;
+                    padding: 1%;
+                }
+            }
+            .email{
+                p{
+                    font-size: 150%;
+                    color: $color-secundario;
+                }
+                input{
+                    width: 100%;
+                    padding: 1%;
+                }
+            }
+            .mensaje{
+                p{
+                    font-size: 150%;
+                    color: $color-secundario;
+                }
+                textarea{
+                    width: 100%;
+                    padding: 1%;
+                }
+                input{
+                    background-color: $color-primario;
+                    color: $color-secundario;
+                    border-style: none;
+                    font-size: 120%;
+                    padding: 2%;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+    }
+    
+    
+}

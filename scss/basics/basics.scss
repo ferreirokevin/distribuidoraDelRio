@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "workSansRegular";
+    src: url(../../font/WorkSans-Regular.ttf);
+}
+*{
+    font-family: "workSansRegular", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+h1{
+    font-size: 3.0rem;
+    color: $color-primario;
+    text-align: center;
+}
+h2{
+    font-size: 2.0rem;
+    color: $color-primario;
+    text-align: center;
+}
