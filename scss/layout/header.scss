@@ -65,4 +65,7 @@ header{
 
         }
     }
+    @include mediaquery-tablet{
+        display: none;
+    }
 }

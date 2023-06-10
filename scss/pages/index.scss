@@ -3,6 +3,11 @@
     img{
         position: relative;
         width: 100vw;
+        @include mediaquery-mobile{
+            width: 200%;
+            margin-left: -100%;
+            filter: blur(2px);
+        }
     }
     div{
         display: flex;
@@ -10,11 +15,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        top: 45%;
+        top: 350px;
         left: 10%;
         p{
             color: $color-primario;
             font-size: 2vw;
+        }
+        @include mediaquery-tablet{
+            top: 200px;
+        }
+        @include mediaquery-mobile{
+            margin-left: -10px;
+            top: 50px;
+            zoom: 350%;
         }
     }
 }
@@ -40,7 +53,19 @@
             p{
                 font-size: 2vw;
                 color: $color-secundario;
+                @include mediaquery-mobile{
+                    font-size: 3vw;
+                    margin-top: 8%;
+                }
             }
+            @include mediaquery-mobile{
+                width: 50%;
+            }
+        }
+        @include mediaquery-mobile{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -52,6 +77,9 @@
         padding: 7%;
         padding-top: 3%;
         font-size: 130%;
+        @include mediaquery-mobile{
+            font-size: 80%;
+        }
     }
 }
 #portfolio{
@@ -65,6 +93,17 @@
         margin-top: 7%;
         display: flex;
         justify-content: space-around;
+        @include mediaquery-tablet{
+            flex-wrap: wrap;
+            img{
+                margin: 10%;
+            }
+        }
+        @include mediaquery-mobile{
+            img{
+                width: 40%;
+            }
+        }
     }
 }
 #contacto{
@@ -80,7 +119,7 @@
             width: 100vw;
         }
         .seccion__contacto{
-            width: 100%;
+            width: 100vw;
             background-color: $color-primario;
             padding: 2%;
             .nombres{
@@ -126,7 +165,14 @@
                     padding: 1%;
                     border-radius: 15px;
                     margin-left: 55%;
+                    @include mediaquery-tablet{
+                        width: 15%;
+                        margin-left: 48%;
+                    }
                 }
+            }
+            @include mediaquery-tablet{
+                width: 96vw;
             }
         }
 
