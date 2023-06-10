@@ -14,20 +14,23 @@
         left: 10%;
         p{
             color: $color-primario;
-            font-size: 150%;
+            font-size: 2vw;
         }
     }
 }
-.nuestros__servicios{
+#nuestros__servicios{
     grid-area: nuestros__servicios;
     position: relative;
+    margin-top: 6%;
     .tarjetas{
         width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
         div{
-            margin: 7%;
+            margin-top: 7%;
+            margin-bottom: 7%;
             display: flex;
             flex-direction: column;
             padding-bottom: 20px;
@@ -41,7 +44,7 @@
         }
     }
 }
-.nosotros{
+#nosotros{
     grid-area: nosotros;
     position: relative;
     p{
@@ -51,19 +54,20 @@
         font-size: 130%;
     }
 }
-.portfolio{
+#portfolio{
     grid-area: portfolio;
     position: relative;
 }
-.cobertura{
+#cobertura{
     grid-area: cobertura;
     position: relative;
     div{
+        margin-top: 7%;
         display: flex;
         justify-content: space-around;
     }
 }
-.contacto{
+#contacto{
     grid-area: contacto;
     position: relative;
     margin-top: 15%;

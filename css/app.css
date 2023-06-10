@@ -10,7 +10,7 @@
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   color: #1d725f;
   text-align: center;
 }
@@ -46,6 +46,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 4%;
 }
 footer img {
   width: 10%;
@@ -54,6 +55,9 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #000;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 header {
@@ -139,21 +143,24 @@ header nav .ul__header .header__tienda li a {
 }
 .portada div p {
   color: #1d725f;
-  font-size: 150%;
+  font-size: 2vw;
 }
 
-.nuestros__servicios {
+#nuestros__servicios {
   grid-area: nuestros__servicios;
   position: relative;
+  margin-top: 6%;
 }
-.nuestros__servicios .tarjetas {
+#nuestros__servicios .tarjetas {
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-.nuestros__servicios .tarjetas div {
-  margin: 7%;
+#nuestros__servicios .tarjetas div {
+  margin-top: 7%;
+  margin-bottom: 7%;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
@@ -161,91 +168,92 @@ header nav .ul__header .header__tienda li a {
   background-color: #1d725f;
   text-align: center;
 }
-.nuestros__servicios .tarjetas div p {
+#nuestros__servicios .tarjetas div p {
   font-size: 2vw;
   color: #ffffff;
 }
 
-.nosotros {
+#nosotros {
   grid-area: nosotros;
   position: relative;
 }
-.nosotros p {
+#nosotros p {
   text-align: justify;
   padding: 7%;
   padding-top: 3%;
   font-size: 130%;
 }
 
-.portfolio {
+#portfolio {
   grid-area: portfolio;
   position: relative;
 }
 
-.cobertura {
+#cobertura {
   grid-area: cobertura;
   position: relative;
 }
-.cobertura div {
+#cobertura div {
+  margin-top: 7%;
   display: flex;
   justify-content: space-around;
 }
 
-.contacto {
+#contacto {
   grid-area: contacto;
   position: relative;
   margin-top: 15%;
 }
-.contacto .contact {
+#contacto .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contacto .contact img {
+#contacto .contact img {
   width: 100vw;
 }
-.contacto .contact .seccion__contacto {
+#contacto .contact .seccion__contacto {
   width: 100%;
   background-color: #1d725f;
   padding: 2%;
 }
-.contacto .contact .seccion__contacto .nombres {
+#contacto .contact .seccion__contacto .nombres {
   margin-left: 25%;
 }
-.contacto .contact .seccion__contacto .nombres p {
+#contacto .contact .seccion__contacto .nombres p {
   font-size: 150%;
   color: #ffffff;
 }
-.contacto .contact .seccion__contacto .nombres input {
+#contacto .contact .seccion__contacto .nombres input {
   width: 65%;
   padding: 1%;
 }
-.contacto .contact .seccion__contacto .email {
+#contacto .contact .seccion__contacto .email {
   margin-left: 25%;
 }
-.contacto .contact .seccion__contacto .email p {
+#contacto .contact .seccion__contacto .email p {
   font-size: 150%;
   color: #ffffff;
 }
-.contacto .contact .seccion__contacto .email input {
+#contacto .contact .seccion__contacto .email input {
   width: 65%;
   padding: 1%;
 }
-.contacto .contact .seccion__contacto .mensaje {
+#contacto .contact .seccion__contacto .mensaje {
   margin-left: 25%;
   display: flex;
   flex-direction: column;
 }
-.contacto .contact .seccion__contacto .mensaje p {
+#contacto .contact .seccion__contacto .mensaje p {
   font-size: 150%;
   color: #ffffff;
 }
-.contacto .contact .seccion__contacto .mensaje textarea {
+#contacto .contact .seccion__contacto .mensaje textarea {
   width: 65%;
   padding: 1%;
 }
-.contacto .contact .seccion__contacto .mensaje input {
+#contacto .contact .seccion__contacto .mensaje input {
   width: 10%;
   background-color: #000;
   color: #ffffff;
