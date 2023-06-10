@@ -127,10 +127,20 @@
                 p{
                     font-size: 150%;
                     color: $color-secundario;
+                    @include mediaquery-tablet{
+                        font-size: 100%;
+                    }
                 }
                 input{
                     width: 65%;
                     padding: 1%;
+                    @include mediaquery-mobile{
+                        width: 90%;
+                        
+                    }
+                }
+                @include mediaquery-mobile{
+                    margin-left: 13%;
                 }
             }
             .email{
@@ -138,10 +148,20 @@
                 p{
                     font-size: 150%;
                     color: $color-secundario;
+                    @include mediaquery-tablet{
+                        font-size: 100%;
+                    }
                 }
                 input{
                     width: 65%;
                     padding: 1%;
+                    @include mediaquery-mobile{
+                        width: 90%;
+                        
+                    }
+                }
+                @include mediaquery-mobile{
+                    margin-left: 13%;
                 }
             }
             .mensaje{
@@ -151,10 +171,20 @@
                 p{
                     font-size: 150%;
                     color: $color-secundario;
+                    @include mediaquery-tablet{
+                        font-size: 100%;
+                    }
                 }
                 textarea{
                     width: 65%;
                     padding: 1%;
+                    @include mediaquery-mobile{
+                        width: 90%;
+                        
+                    }
+                }
+                @include mediaquery-mobile{
+                    margin-left: 13%;
                 }
                 input{
                     width: 10%;
@@ -168,6 +198,9 @@
                     @include mediaquery-tablet{
                         width: 15%;
                         margin-left: 48%;
+                    }
+                    @include mediaquery-mobile{
+                        width: 42%;
                     }
                 }
             }

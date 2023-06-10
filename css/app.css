@@ -66,7 +66,7 @@ footer a {
   margin-bottom: 1%;
 }
 
-header {
+header .header__container {
   grid-area: header;
   width: 100vw;
   height: 100px;
@@ -74,44 +74,72 @@ header {
   background-color: #ffffff;
   z-index: 1000;
 }
-header nav {
+header .header__container img {
+  width: 45px;
+  margin: 25px;
+}
+header .header__container nav {
   display: flex;
   justify-content: space-around;
   justify-content: center;
 }
-header nav .logo__header {
-  margin-left: 100px;
-}
-header nav img {
-  width: 45px;
-  margin: 25px;
-}
-header nav .ul__header {
+header .header__container nav .ul__header {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   height: 100px;
+  margin-top: -110;
 }
-header nav .ul__header ul {
+header .header__container nav .ul__header ul {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header nav .ul__header ul li {
+header .header__container nav .ul__header ul li {
   margin: 40px;
   list-style: none;
 }
-header nav .ul__header ul li a {
+header .header__container nav .ul__header ul li a {
   color: #1d725f;
   font-weight: bolder;
   letter-spacing: 1.5px;
   font-size: 17px;
 }
-header nav .ul__header ul li:hover {
+@media (max-width: 992px) {
+  header .header__container nav .ul__header ul li a {
+    color: #000;
+  }
+}
+header .header__container nav .ul__header ul li:hover {
   text-decoration: underline !important;
 }
-header nav .ul__header .header__tienda li {
+@media (max-width: 992px) {
+  header .header__container nav .ul__header ul li {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 992px) {
+  header .header__container nav .ul__header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-right: 0px;
+    width: 80vw;
+    height: 10000%;
+    padding: 0%;
+  }
+}
+@media (max-width: 767px) {
+  header .header__container nav .ul__header ul {
+    height: auto;
+  }
+}
+header .header__container nav .ul__header .header__tienda li {
   background-color: #1d725f;
   width: 90px;
   height: 50px;
@@ -120,19 +148,77 @@ header nav .ul__header .header__tienda li {
   align-items: center;
   border-radius: 55px;
 }
-header nav .ul__header .header__tienda li:hover {
+header .header__container nav .ul__header .header__tienda li:hover {
   background-color: #000;
   cursor: pointer;
 }
-header nav .ul__header .header__tienda li:hover a {
+header .header__container nav .ul__header .header__tienda li:hover a {
   color: #1d725f;
 }
-header nav .ul__header .header__tienda li a {
+header .header__container nav .ul__header .header__tienda li a {
   color: #000;
 }
 @media (max-width: 992px) {
-  header {
+  header .header__container nav .ul__header .header__tienda li a {
+    color: #1d725f;
+  }
+}
+@media (max-width: 992px) {
+  header .header__container nav .ul__header .header__tienda li {
+    background-color: #000;
+  }
+}
+@media (max-width: 992px) {
+  header .header__container nav .ul__header {
+    margin-top: 0%;
+  }
+}
+@media (max-width: 992px) {
+  header .header__container nav {
     display: none;
+    background-color: #1d725f;
+    margin-top: -11;
+    margin-right: -10;
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  header .header__container nav {
+    margin-right: 0%;
+  }
+}
+header .header__container .menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+@media (max-width: 992px) {
+  header .header__container .menu {
+    width: 200px;
+    appearance: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  header .header__container .menu img {
+    width: 50%;
+  }
+}
+header .header__container .input__menu {
+  display: none;
+}
+@media (max-width: 992px) {
+  header .header__container .input__menu {
+    appearance: none;
+  }
+}
+@media (max-width: 992px) {
+  header .header__container .input__menu:checked + nav {
+    display: block;
   }
 }
 
@@ -291,9 +377,24 @@ header nav .ul__header .header__tienda li a {
   font-size: 150%;
   color: #ffffff;
 }
+@media (max-width: 992px) {
+  #contacto .contact .seccion__contacto .nombres p {
+    font-size: 100%;
+  }
+}
 #contacto .contact .seccion__contacto .nombres input {
   width: 65%;
   padding: 1%;
+}
+@media (max-width: 767px) {
+  #contacto .contact .seccion__contacto .nombres input {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  #contacto .contact .seccion__contacto .nombres {
+    margin-left: 13%;
+  }
 }
 #contacto .contact .seccion__contacto .email {
   margin-left: 25%;
@@ -302,9 +403,24 @@ header nav .ul__header .header__tienda li a {
   font-size: 150%;
   color: #ffffff;
 }
+@media (max-width: 992px) {
+  #contacto .contact .seccion__contacto .email p {
+    font-size: 100%;
+  }
+}
 #contacto .contact .seccion__contacto .email input {
   width: 65%;
   padding: 1%;
+}
+@media (max-width: 767px) {
+  #contacto .contact .seccion__contacto .email input {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  #contacto .contact .seccion__contacto .email {
+    margin-left: 13%;
+  }
 }
 #contacto .contact .seccion__contacto .mensaje {
   margin-left: 25%;
@@ -315,9 +431,24 @@ header nav .ul__header .header__tienda li a {
   font-size: 150%;
   color: #ffffff;
 }
+@media (max-width: 992px) {
+  #contacto .contact .seccion__contacto .mensaje p {
+    font-size: 100%;
+  }
+}
 #contacto .contact .seccion__contacto .mensaje textarea {
   width: 65%;
   padding: 1%;
+}
+@media (max-width: 767px) {
+  #contacto .contact .seccion__contacto .mensaje textarea {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  #contacto .contact .seccion__contacto .mensaje {
+    margin-left: 13%;
+  }
 }
 #contacto .contact .seccion__contacto .mensaje input {
   width: 10%;
@@ -333,6 +464,11 @@ header nav .ul__header .header__tienda li a {
   #contacto .contact .seccion__contacto .mensaje input {
     width: 15%;
     margin-left: 48%;
+  }
+}
+@media (max-width: 767px) {
+  #contacto .contact .seccion__contacto .mensaje input {
+    width: 42%;
   }
 }
 @media (max-width: 992px) {

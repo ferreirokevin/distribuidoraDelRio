@@ -1,71 +1,141 @@
 header{
-    grid-area: header;
-    width: 100vw;
-    height: 100px;
-    position: fixed;
-    background-color: $color-secundario;
-    z-index: 1000;
-    nav{
-        display: flex;
-        justify-content: space-around;
-        justify-content: center;
-        .logo__header{
-            margin-left: 100px;
-        }
+    .header__container{
+        grid-area: header;
+        width: 100vw;
+        height: 100px;
+        position: fixed;
+        background-color: $color-secundario;
+        z-index: 1000;
         img{
             width: 45px;
             margin: 25px;
         }
-        .ul__header{
+        
+        nav{
             display: flex;
-            justify-content: flex-end;
-            width: 100%;
-            height: 100px;
-            ul{
-                height: 100%;
+            justify-content: space-around;
+            justify-content: center;
+            .ul__header{
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                
-                li{
-                    margin: 40px;
-                    list-style: none;          
-                    a{
-                        color: $color-primario;
-                        font-weight: bolder;
-                        letter-spacing: 1.5px;
-                        font-size: 17px;                                                
-                    }
-                    &:hover{
-                        text-decoration: underline !important;  
-                    }
-                }
-            }
-            .header__tienda{
-                li{
-                    background-color: $color-primario;
-                    width: 90px;
-                    height: 50px;
+                justify-content: flex-end;
+                width: 100%;
+                height: 100px;
+                margin-top: -110;
+                ul{
+                    height: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border-radius: 55px;
-                    &:hover{
-                        background-color: $color-terciario;
-                        cursor: pointer;
+                    
+                    li{
+                        margin: 40px;
+                        list-style: none;          
                         a{
                             color: $color-primario;
+                            font-weight: bolder;
+                            letter-spacing: 1.5px;
+                            font-size: 17px;   
+                            @include mediaquery-tablet{
+                                color: $color-terciario;
+                            }                                             
+                        }
+                        &:hover{
+                            text-decoration: underline !important;  
+                        }
+                        @include mediaquery-tablet(){
+                            margin-top: 35px;
+                            margin-bottom: 15px;
+                            margin-left: 10%;
                         }
                     }
-                    a{
-                        color: $color-terciario;
+                    @include mediaquery-tablet(){
+                        display: flex;
+                        flex-direction: column;        
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        margin-left: 5%;
+                        margin-right: 0px;
+                        width: 80vw;
+                        height: 10000%;
+                        padding: 0%;
+                    } 
+                    @include mediaquery-mobile(){
+                        height: auto;
+                    } 
+                }
+                .header__tienda{
+                    li{
+                        background-color: $color-primario;
+                        width: 90px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 55px;
+                        &:hover{
+                            background-color: $color-terciario;
+                            cursor: pointer;
+                            a{
+                                color: $color-primario;
+                            }
+                        }
+                        a{
+                            color: $color-terciario;
+                            @include mediaquery-tablet{
+                                color: $color-primario;
+                            }
+                        }
+                        @include mediaquery-tablet{
+                            background-color: $color-terciario;
+                        }
                     }
                 }
-            }
+                @include mediaquery-tablet{
+                    margin-top: 0%;
+                }
 
+            }
+            @include mediaquery-tablet(){
+                display: none;
+                background-color: $color-primario;
+                margin-top: -11;
+                margin-right: -10;
+                height: 400px;
+
+            }
+            @include mediaquery-mobile(){
+                margin-right: 0%;
+            }
         }
-    }
-    @include mediaquery-tablet{
-        display: none;
+        .menu{
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            @include mediaquery-tablet(){
+                width: 200px;
+                appearance: none;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            img{
+                @include mediaquery-tablet(){
+                    width: 50%;
+                }
+            }
+        }
+        .input__menu{
+            display: none;
+            @include mediaquery-tablet(){
+                appearance: none;
+            }
+            &:checked + nav{
+                @include mediaquery-tablet(){
+                    display: block;
+                }
+            }
+        }
     }
 }
