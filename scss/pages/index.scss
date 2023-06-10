@@ -1,7 +1,7 @@
 .portada{
+    grid-area: portada;
     img{
         position: relative;
-        top: 101px;
         width: 100vw;
     }
     div{
@@ -19,8 +19,8 @@
     }
 }
 .nuestros__servicios{
+    grid-area: nuestros__servicios;
     position: relative;
-    top: 200px;
     .tarjetas{
         width: 100vw;
         display: flex;
@@ -36,15 +36,14 @@
             text-align: center;
             p{
                 font-size: 2vw;
-                margin-top: 10px;
                 color: $color-secundario;
             }
         }
     }
 }
 .nosotros{
+    grid-area: nosotros;
     position: relative;
-    top: 190px;
     p{
         text-align: justify;
         padding: 7%;
@@ -53,69 +52,76 @@
     }
 }
 .portfolio{
+    grid-area: portfolio;
     position: relative;
-    top: 250px;
 }
 .cobertura{
+    grid-area: cobertura;
     position: relative;
-    top: 500px;
     div{
         display: flex;
         justify-content: space-around;
-        margin-top: 7%;
     }
 }
 .contacto{
+    grid-area: contacto;
     position: relative;
-    top: 600px;
+    margin-top: 15%;
     .contact{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         img{
-            margin-top: 5%;
             width: 100vw;
         }
         .seccion__contacto{
-            margin-top: -30%;
-            width: 40%;
+            width: 100%;
+            background-color: $color-primario;
+            padding: 2%;
             .nombres{
+                margin-left: 25%;
                 p{
                     font-size: 150%;
                     color: $color-secundario;
                 }
                 input{
-                    width: 100%;
+                    width: 65%;
                     padding: 1%;
                 }
             }
             .email{
+                margin-left: 25%;
                 p{
                     font-size: 150%;
                     color: $color-secundario;
                 }
                 input{
-                    width: 100%;
+                    width: 65%;
                     padding: 1%;
                 }
             }
             .mensaje{
+                margin-left: 25%;
+                display: flex;
+                flex-direction: column;
                 p{
                     font-size: 150%;
                     color: $color-secundario;
                 }
                 textarea{
-                    width: 100%;
+                    width: 65%;
                     padding: 1%;
                 }
                 input{
-                    background-color: $color-primario;
+                    width: 10%;
+                    background-color: $color-terciario;
                     color: $color-secundario;
                     border-style: none;
                     font-size: 120%;
-                    padding: 2%;
+                    padding: 1%;
                     border-radius: 15px;
+                    margin-left: 55%;
                 }
             }
         }

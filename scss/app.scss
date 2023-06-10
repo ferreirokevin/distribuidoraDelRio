@@ -1,6 +1,13 @@
+//basics
+@import "./basics/mobile-tablet.scss";
 @import "./basics/colors.scss";
 @import "./basics/basics.scss";
+
+//layout
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+//pages
 @import "./pages/index.scss";
-@import "./body/header.scss";
-@import "./body/footer.scss";
-@import "./basics/mobile-tablet.scss";
+
+
+

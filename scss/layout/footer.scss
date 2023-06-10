@@ -1,0 +1,19 @@
+footer {
+    background-color: $color-primario;
+    width: 100vw;
+    height: 150px;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 10%;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
