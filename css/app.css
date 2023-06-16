@@ -3,10 +3,10 @@
   src: url(../../font/WorkSans-Regular.ttf);
 }
 * {
-  font-family: "workSansRegular", sans-serif;
+  font-family: "workSansRegular", sans-serif !important;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 h1 {
@@ -326,6 +326,48 @@ header .header__container .input__menu {
 #portfolio {
   grid-area: portfolio;
   position: relative;
+}
+#portfolio #carouselExample .carousel-inner .carousel-item img {
+  max-width: 25%;
+  margin-left: 37.5%;
+}
+@media (max-width: 992px) {
+  #portfolio #carouselExample .carousel-inner .carousel-item img {
+    max-width: 45%;
+    margin-left: 27%;
+    margin-top: 10%;
+  }
+}
+#portfolio #carouselExample .carousel-control-prev {
+  background-color: #1d725f;
+  opacity: 1;
+  width: 10%;
+  height: 55%;
+  margin-top: 5%;
+}
+@media (max-width: 992px) {
+  #portfolio #carouselExample .carousel-control-prev {
+    width: 15%;
+    height: 100%;
+  }
+}
+#portfolio #carouselExample .carousel-control-next {
+  background-color: #1d725f;
+  opacity: 1;
+  width: 10%;
+  height: 55%;
+  margin-top: 5%;
+}
+@media (max-width: 992px) {
+  #portfolio #carouselExample .carousel-control-next {
+    width: 15%;
+    height: 100%;
+  }
+}
+@media (max-width: 992px) {
+  #portfolio {
+    margin-bottom: -10%;
+  }
 }
 
 #cobertura {

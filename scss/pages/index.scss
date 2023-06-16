@@ -85,6 +85,47 @@
 #portfolio{
     grid-area: portfolio;
     position: relative;
+    #carouselExample{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    max-width: 25%;
+                    margin-left: 37.5%;
+                    @include mediaquery-tablet{
+                        max-width: 45%;
+                        margin-left: 27%;
+                        margin-top: 10%;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev{
+            background-color: $color-primario;
+            opacity: 1;
+            width: 10%;
+            height: 55%;
+            margin-top: 5%;
+            @include mediaquery-tablet{
+                width: 15%;
+                height: 100%;
+            }
+        }
+        .carousel-control-next{
+            background-color: $color-primario;
+            opacity: 1;
+            width: 10%;
+            height: 55%;
+            margin-top: 5%;
+            @include mediaquery-tablet{
+                width: 15%;
+                height: 100%;
+            }
+        }
+
+    }
+    @include mediaquery-tablet{
+        margin-bottom: -10%;
+    }
 }
 #cobertura{
     grid-area: cobertura;

@@ -3,10 +3,10 @@
     src: url(../../font/WorkSans-Regular.ttf);
 }
 *{
-    font-family: "workSansRegular", sans-serif;
+    font-family: "workSansRegular", sans-serif !important;
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 h1{
     font-size: 3vw;
